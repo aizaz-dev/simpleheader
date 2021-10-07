@@ -1,0 +1,84 @@
+@import '../../Styles/media.scss';
+@import '../../Styles/variable.scss';
+@import '../../Styles/reset.scss';
+
+.Header {
+  height: 12vh;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  .items {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    .item1 {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .hamburger {
+        font-size: 30px;
+        color: rgb(0, 225, 255);
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .logo {
+        font-size: 30px;
+        color: hotpink;
+        font-weight: 800;
+      }
+    }
+    .item2 {
+      display: flex;
+      width: 300px;
+      justify-content: space-between;
+      align-items: center;
+      .input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid cyan;
+        border-radius: 40px;
+        padding: 5px;
+        .input-icon {
+          font-size: 20px;
+          margin-left: 7px;
+          color: cyan;
+        }
+        .input-text {
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 300px;
+  .side-header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: 600;
+    .side-text {
+      padding-left: 8px;
+    }
+    .side-icon {
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 4px;
+      color: dodgerblue;
+      margin-right: 8px;
+    }
+  }
+}
